@@ -138,6 +138,7 @@ async function main(){
                         aux = null
                       }else{
                         aux.previous.next = aux.next
+                        aux.next.previous = aux.previous
                         aux = aux.next
                       }
                     }else{
